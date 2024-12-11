@@ -12,6 +12,16 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
 document.addEventListener("DOMContentLoaded", function () {
     "use strict";
 
+
+    /* -------------------------------------------
+        Copy Rigth year
+    ------------------------------------------- */
+    // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Set the current year to the span with id 'year'
+    document.getElementById('year').textContent = currentYear;
+
     // Register GSAP plugins
     gsap.registerPlugin(ScrollTrigger);
 
@@ -708,12 +718,6 @@ document.addEventListener("DOMContentLoaded", function () {
             element.classList.remove('mil-active');
         }
 
-    });
-
-    // Get the current year
-  const currentYear = new Date().getFullYear();
-
-  // Set the current year to the span with id 'year'
-  document.getElementById('year').textContent = currentYear;
+    }); 
 
 });
